@@ -9,43 +9,29 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-16dp">
 
         <TextView
             android:id="@+id/txt_tired"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="44dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="52dp"
             android:text="Tired"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView51"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="278dp"
-            android:text="Pregnacy"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView50" />
 
         <CheckBox
             android:id="@+id/check_Hurt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="200dp"
-            android:layout_marginLeft="200dp"
             android:layout_marginEnd="74dp"
             android:layout_marginRight="74dp"
+            app:layout_constraintBottom_toTopOf="@+id/check_body"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/txt_hurt"
             app:layout_constraintTop_toBottomOf="@+id/check_tired" />
 
         <Button
@@ -110,6 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="72dp"
             android:layout_marginRight="72dp"
+            app:layout_constraintBottom_toTopOf="@+id/check_pregnacy"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/check_digesting" />
 
@@ -119,6 +106,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="72dp"
             android:layout_marginRight="72dp"
+            app:layout_constraintBottom_toTopOf="@+id/check_skin"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/check_LW" />
 
@@ -148,28 +136,21 @@
             android:id="@+id/check_tired"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="200dp"
-            android:layout_marginLeft="200dp"
             android:layout_marginTop="44dp"
-            android:layout_marginEnd="65dp"
-            android:layout_marginRight="65dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginRight="72dp"
             app:layout_constraintBottom_toTopOf="@+id/check_Hurt"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.851"
-            app:layout_constraintStart_toEndOf="@+id/txt_tired"
             app:layout_constraintTop_toTopOf="parent" />
 
         <CheckBox
             android:id="@+id/check_breath"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="240dp"
-            android:layout_marginLeft="240dp"
             android:layout_marginEnd="74dp"
             android:layout_marginRight="74dp"
+            app:layout_constraintBottom_toTopOf="@+id/check_anorexia"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView46"
             app:layout_constraintTop_toBottomOf="@+id/check_body" />
 
         <CheckBox
@@ -178,6 +159,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="72dp"
             android:layout_marginRight="72dp"
+            app:layout_constraintBottom_toTopOf="@+id/check_digesting"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/check_anorexia" />
 
@@ -185,14 +167,10 @@
             android:id="@+id/check_anorexia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="240dp"
-            android:layout_marginLeft="240dp"
-            android:layout_marginTop="4dp"
             android:layout_marginEnd="74dp"
             android:layout_marginRight="74dp"
+            app:layout_constraintBottom_toTopOf="@+id/check_LW"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView47"
             app:layout_constraintTop_toBottomOf="@+id/check_breath" />
 
         <TextView
@@ -201,7 +179,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
             android:layout_marginLeft="28dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="20dp"
             android:text="Skin"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView49" />
@@ -234,13 +212,10 @@
             android:id="@+id/check_body"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="240dp"
-            android:layout_marginLeft="240dp"
             android:layout_marginEnd="74dp"
             android:layout_marginRight="74dp"
+            app:layout_constraintBottom_toTopOf="@+id/check_breath"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/txt_body"
             app:layout_constraintTop_toBottomOf="@+id/check_Hurt" />
 
         <TextView
@@ -254,31 +229,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_tired" />
 
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Pregnacy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/txt_tired3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="44dp"
-        android:text="Tired"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="278dp"
-        android:text="Pregnacy"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView50" />
 
     <Button
         android:id="@+id/btn_Ok3"
@@ -312,20 +274,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <CheckBox
-        android:id="@+id/check_tired3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="65dp"
-        android:layout_marginRight="65dp"
-        app:layout_constraintBottom_toTopOf="@+id/check_Hurt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/txt_tired"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
